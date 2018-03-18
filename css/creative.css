@@ -8,25 +8,33 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* hr lines beneith each headline and above the maine button*/
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
-}
+  /*border-color: #F05F40;*/
+  border-color: #2A4E6E;
 
+}
+/* Light line in "about"-section*/
 hr.light {
-  border-color: #fff;
+  /*border-color: #fff;*/
+  border-color: #728DA5;
+
 }
 
+/* Link color (e-mail-link)*/
 a {
-  color: #F05F40;
+  /*color: #F05F40;*/
+  color: #133453;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
+/* Link hover color*/
 a:hover {
-  color: #f05f40;
+  color: #2A4E6E;
 }
 
 h1,
@@ -39,15 +47,22 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  /*background-color: #F05F40 !important;*/
+  background-color: #2A4E6E !important; /* Main color */
+
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  /*background-color: #212529 !important;*/
+  background-color: #133453 !important; /* Darker color */
+
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+}
+.text-border {
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
 section {
@@ -60,13 +75,15 @@ section {
 
 ::-moz-selection {
   color: #fff;
-  background: #212529;
+  /*background: #212529;*/
+  background: #041F37;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #212529;
+  /*background: #212529;*/
+  background: #041F37;
   text-shadow: none;
 }
 
@@ -89,15 +106,20 @@ img::-moz-selection {
   transition: all 0.2s;
 }
 
+/* Collapsed navbar menu active */
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
+  /*color: #F05F40;*/
+  color: #2A4E6E;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Collasped Navbar brand hover*/
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  /*color: #f05f40;*/
+  color: #4A6B8A; /* Lighter color */
+
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -105,17 +127,23 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  /*color: #212529;*/
+  color: #041F37;  /*Darkest color*/ 
+
 }
 
+/* Collapsed nav-bar link hover color*/
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
-}
+  /*color: #F05F40;*/
+  color: #4A6B8A; /* Lighter color */
 
+}
+/* Expanded nav-bar active-section color*/
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  /*color: #F05F40 !important;*/
+  color: #4A6B8A !important; /* Lighter color */
   background-color: transparent;
 }
 
@@ -150,19 +178,27 @@ img::-moz-selection {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
   }
+  /* Expanded navbar on scroll-down color */
   #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+    /*color: #F05F40;*/
+    color: #2A4E6E;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
+    /*color: #f05f40;*/
+    color: #2A4E6E;;
+
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #212529;
+    /*color: #212529;*/
+    color: #041F37; 
   }
+    /* Expanded navbar on scroll-down hover/focus color */
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    /*color: #F05F40;*/
+    color: #4A6B8A;
+
   }
 }
 
@@ -282,7 +318,9 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  /*color: #F05F40 !important;*/
+  color: #2A4E6E !important;
+
 }
 
 .btn {
@@ -298,15 +336,18 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  /*background-color: #F05F40;*/
+  background-color: #2A4E6E;
+  /*border-color: #F05F40;*/
+  border-color: #133453;  
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  /*background-color: #ee4b28 !important;*/
+  background-color: #133453 !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(42, 78,110, 0.5) !important;
 }
